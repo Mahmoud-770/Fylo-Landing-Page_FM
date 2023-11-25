@@ -1,0 +1,264 @@
+/* * * * * S T A R T - G L O B A L - S T Y L E * * * * */
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* * * G L O B A L - T E X T * * */
+li,h1,h4,h6,input{font-family: 'Raleway', sans-serif;}
+.content{width: 50%;}
+h1{
+    font-size: 40px;
+    color: hsl(243, 87%, 12%);
+}
+p{margin: 25px 0;}
+/* * * G L O B A L - T E X T * * */
+
+/* * * G L O B A L - C O U N T I N E R * * */
+.countiner{
+    margin: auto;
+    padding: 45px 80px
+}
+@media (max-width:700px){
+    .countiner{
+        padding: 50px 20px;
+    }
+}
+/* * * G L O B A L - C O U N T I N E R * * */
+
+/* * * * * E N D - G L O B A L - S T Y L E * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * S T A R T - H E A D E R - S E C T I O N * * * * */
+header .countiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(243, 87%, 12%);
+}
+header .countiner img{width: 120px;}
+header .countiner ul{
+    width: 250px;
+    list-style: none;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:700px){
+    header .countiner ul{width: 200px;}
+    header .countiner img{width: 100px;}
+}
+/* * * * * E N D I N G - H E A D E R - S E C T I O N * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * S T A R T - L A N D I N G - S E C T I O N * * * * */
+.landing .countiner{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.landing img{width: 50%;}
+
+.landing form{display: flex;}
+.landing input{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.landing input[type="text"]{
+    width: 50%;
+    margin-right: 15px;
+    border: 1px solid hsl(243, 87%, 12%);
+}
+.landing input[type="submit"]{
+    width: 180px;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    background: hsl(224, 93%, 58%);
+}
+
+@media (max-width:700px){
+    .landing .countiner{flex-direction: column}
+    .landing .content{width: auto}
+    .landing h1,.landing p{text-align: center}
+    .landing h1{
+        font-size: 26px;
+        margin-top: 20px
+    }
+    .landing p{font-size: 16px}
+    .landing img{width: auto}
+    .landing form{
+        flex-direction: column;
+        margin: auto
+    }
+    .landing input[type="text"],.landing input[type="submit"]{
+        width: 100%;margin: 10px 0;padding: 15px
+    }
+}
+/* * * * * E N D I N G - L A N D I N G - S E C T I O N * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * S T A R T - P R O D U C T I V E - S E C T I O N * * * * */
+.prod{
+    margin-top: 100px;
+    position: relative;
+}
+.prod img[alt="BG"]{
+    position: absolute;
+    top:-100px;
+    width: 100%;
+}
+.prod .countiner{
+    display: flex;
+    flex-direction: row-reverse;
+    background: hsl(240, 75%, 98%);
+}
+.prod .countiner h1{font-size: 36px;}
+.prod .countiner img{width: 50%;}
+.prod .content .link{
+    width: 200px;
+    padding: 5px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: hsl(170, 45%, 43%);
+    margin-bottom: 50px;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+}
+.prod .content .link img{width: 23px}
+.prod .content .card{
+    width: 330px;
+    height: 230px;
+    padding: 30px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0px 10px 0px #ddd;
+}
+.content .card img{width: 20px;}
+.card p{margin: 10px 0;font-size: 13px;}
+.card .profile{display: flex;}
+.card .profile .img{
+    width: 35px;
+    height: 35px;
+    margin-right: 25px;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url(images/avatar-testimonial.jpg);
+}
+.card .profile .txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card .profile h4{font-size: 13px;}
+.card .profile h6{font-size: 13px;font-weight: 400;}
+
+@media (max-width:700px){
+    .prod .countiner{flex-direction: column}
+    .prod .content{width: auto}
+    .prod img[alt="BG"]{top: -25px}
+    .prod h1,.landing p{text-align: center}
+    .prod .countiner h1{
+        font-size: 20px;
+        margin-top: 20px
+    }
+    .prod p{font-size: 15px}
+    .prod img[alt="two"]{
+        width: auto;
+        margin-bottom: 50px
+    }
+    .link{margin: auto}
+}
+/* * * * * E N D I N G - P R O D U C T I V E - S E C T I O N * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * S T A R T - A C C E S S - S E C T I O N * * * * */
+.access{
+    color: hsl(0, 0%, 75%);
+    background: hsl(238, 22%, 44%);
+}
+.access .countiner{
+    display: flex;
+    justify-content: space-between;
+}
+.access .countiner h1{
+    color: #FFF;
+    font-size: 35px;
+}
+.access .content{width: 40%;}
+.access .countiner p{
+    color: hsl(0, 0%, 75%);
+    font-size: 15px;
+}
+.access form{
+    display: flex;
+    flex-direction: column;
+}
+.access input{
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.access input[type="text"]{
+    width: 450px;
+    margin-bottom: 20px;
+    border: 1px solid hsl(243, 87%, 12%);
+}
+.access input[type="submit"]{
+    width: 180px;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    background: hsl(224, 93%, 58%);
+}
+@media (max-width:700px){
+    .access .countiner{flex-direction: column}
+    .access .content{width: auto}
+    .access h1,.access p{text-align: center}
+    .access .content h1{
+        font-size: 26px;
+        margin-top: 20px
+    }
+    .access .content p{font-size: 16px}
+    .access form{
+        width: 100%;
+        margin: auto
+    }
+    .access input[type="text"],.access input[type="submit"]{
+        width: 100%;margin: 10px 0;padding: 15px
+    }
+}
+/* * * * * E N D I N G - A C C E S S - S E C T I O N * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * S T A R T - F O O T E R - S E C T I O N * * * * */
+
+.footer{
+    color:hsl(0, 0%, 75%);
+    background: hsl(243, 87%, 12%);
+}
+.footer .countiner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+@media (max-width:700px){
+    .footer .countiner{flex-direction: column}
+    .footer ul{margin: auto;}
+    .footer li{text-align: center;margin-bottom: 20px;}
+    .footer li img{margin-right: 5px;}
+}
+/* * * * * E N D I N G - F O O T E R - S E C T I O N * * * * */
